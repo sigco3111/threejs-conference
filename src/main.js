@@ -50,6 +50,8 @@ const loader = createLoaderOverlay();
 
 init(loader).catch((error) => {
   loader.fail("로드에 실패했습니다. 콘솔에서 자세한 내용을 확인하세요.");
+  // Cache-buster build marker — keep unique per release so Pages serves fresh bundles
+  console.info("[threejs-conference] build: 2026-09-29-cache-bust-01");
   console.error("Failed to initialize scene:", error);
 });
 
