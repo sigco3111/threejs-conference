@@ -614,7 +614,17 @@ export function createWalkControls({
       return;
     }
 
-    domElement.requestPointerLock?.();
+    // Chrome rejects immediate re-lock after user exit (~1.25s cooldown) with
+    // a SecurityError promise rejection — swallow it; the walk prompt stays up
+    // and the player can click again once the cooldown expires.
+    try {
+      const lockRequest = domElement.requestPointerLock?.();
+      if (lockRequest && typeof lockRequest.catch === "function") {
+        lockRequest.catch(() => {});
+      }
+    } catch {
+      // Older requestPointerLock without promise — ignore sync errors too.
+    }
   }
 
   function bind() {

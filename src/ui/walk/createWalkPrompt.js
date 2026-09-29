@@ -87,7 +87,16 @@ export function createWalkPrompt({ domElement, walkControls, state } = {}) {
       return;
     }
 
-    domElement.requestPointerLock();
+    // Same cooldown guard as onCanvasClick — Chrome throws SecurityError if
+    // the player clicks again right after exiting pointer lock.
+    try {
+      const lockRequest = domElement.requestPointerLock();
+      if (lockRequest && typeof lockRequest.catch === "function") {
+        lockRequest.catch(() => {});
+      }
+    } catch {
+      // Ignore.
+    }
   }
 
   function onWalkChange({ hasTouchLooked: nextHasTouchLooked } = {}) {
