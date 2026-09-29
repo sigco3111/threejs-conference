@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" href="data:," />
+
+    <title>Threejs-Punk | 안데르송 만치니와 Sunag의 사이버펑크 빗속 골목</title>
+    <meta
+      name="title"
+      content="Threejs-Punk - 안데르송 만치니와 Sunag의 사이버펑크 빗속 골목"
+    />
+    <meta
+      name="description"
+      content="WebGPU와 Three.js로 구현된 빗속 사이버펑크 골목을 걸어보세요. 네온 반사, 시네마틱한 빗줄기, 실시간 후처리가 펼쳐지는 야간 도시. 안데르송 만치니와 Sunag이 Three.js와 TSL로 제작했습니다."
+    />
+    <meta
+      name="keywords"
+      content="WebGPU, Three.js, TSL, Three Shading Language, 사이버펑크, 빗속 골목, 인터랙티브 3D, 실시간 렌더링, 네온 조명, PBR 머티리얼, 후처리, 안데르송 만치니, Sunag, three.js 데모"
+    />
+    <meta name="author" content="안데르송 만치니, Sunag" />
+    <meta name="creator" content="안데르송 만치니, Sunag" />
+    <meta name="publisher" content="안데르송 만치니" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="google" content="notranslate" />
+    <link rel="canonical" href="https://threejspunk.vercel.app/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://threejspunk.vercel.app/" />
+    <meta
+      property="og:site_name"
+      content="Threejs-Punk"
+    />
+    <meta
+      property="og:title"
+      content="Threejs-Punk - 안데르송 만치니와 Sunag의 사이버펑크 빗속 골목"
+    />
+    <meta
+      property="og:description"
+      content="WebGPU와 Three.js로 구현된 빗속 사이버펑크 골목을 걸어보세요. 네온 반사, 시네마틱한 빗줄기, 실시간 후처리가 펼쳐지는 야간 도시."
+    />
+    <meta
+      property="og:image"
+      content="https://threejspunk.vercel.app/preview.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="2544" />
+    <meta property="og:image:height" content="1726" />
+    <meta
+      property="og:image:alt"
+      content="Threejs-Punk — 네온 조명과 시네마틱 분위기의 빗속 사이버펑크 골목"
+    />
+    <meta property="og:locale" content="ko_KR" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@andersonmancini" />
+    <meta name="twitter:creator" content="@andersonmancini" />
+    <meta property="twitter:domain" content="threejspunk.vercel.app" />
+    <meta
+      property="twitter:url"
+      content="https://threejspunk.vercel.app/"
+    />
+    <meta
+      name="twitter:title"
+      content="Threejs-Punk - 안데르송 만치니와 Sunag의 사이버펑크 빗속 골목"
+    />
+    <meta
+      name="twitter:description"
+      content="WebGPU와 Three.js로 구현된 빗속 사이버펑크 골목을 걸어보세요. 네온 반사, 시네마틱한 빗줄기, 실시간 후처리가 펼쳐지는 야간 도시."
+    />
+    <meta
+      name="twitter:image"
+      content="https://threejspunk.vercel.app/preview.jpg"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Threejs-Punk — 네온 조명과 시네마틱 분위기의 빗속 사이버펑크 골목"
+    />
+
+    <!-- App / mobile -->
+    <meta name="application-name" content="Threejs-Punk" />
+    <meta name="mobile-web-app-title" content="Threejs-Punk" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Threejs-Punk" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Threejs-Punk",
+        "description": "사이버펑크에서 영감을 받은 빗속 골목 — 네온 조명, 빗줄기, 시네마틱 후처리가 살아 있는 WebGPU Three.js 인터랙티브 경험. 안데르송 만치니와 Sunag 제작.",
+        "url": "https://threejspunk.vercel.app/",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "안데르송 만치니",
+            "url": "https://andersonmancini.dev/"
+          },
+          {
+            "@type": "Person",
+            "name": "Sunag"
+          }
+        ],
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Web Browser",
+        "browserRequirements": "JavaScript 및 WebGPU 지원 필요",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "screenshot": "https://threejspunk.vercel.app/preview.jpg",
+        "softwareVersion": "1.0",
+        "keywords": "WebGPU, Three.js, TSL, 사이버펑크, 빗속 골목, 안데르송 만치니, Sunag",
+        "inLanguage": "ko"
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>
+      Threejs-Punk — 안데르송 만치니와 Sunag의 사이버펑크 빗속 골목
+    </noscript>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
