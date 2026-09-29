@@ -6,7 +6,8 @@
 
 | 항목 | 내용 |
 |------|------|
-| **라이브 데모** | [https://threejspunk.vercel.app/](https://threejspunk.vercel.app/) |
+| **라이브 데모 (이 저장소)** | [https://sigco3111.github.io/threejs-conference/](https://sigco3111.github.io/threejs-conference/) |
+| **원작 라이브 데모** | [https://threejspunk.vercel.app/](https://threejspunk.vercel.app/) |
 | **원작자** | [Anderson Mancini](https://andersonmancini.dev/) · **Sunag** (TSL 창시자) |
 | **배경** | [TSL 워크숍 2026](https://threejs.paris/)을 위해 개정 |
 | **기술 스택** | Three.js `^0.185` (WebGPU + TSL), Vite 6, `three-mesh-bvh`, GSAP |
@@ -34,6 +35,24 @@
 - 메타데이터 (`<title>`, Open Graph, Twitter, JSON-LD, `<html lang>`)
 
 원본 영문 README는 [`README.en.md.bak`](./README.en.md.bak)에 백업해 두었습니다.
+
+---
+
+## 도보판과 드라이브판 안내
+
+이 저장소는 **도보판(산책 버전)** 입니다. 1인칭으로 빗속 골목을 걷고 둘러보는 체험에 집중합니다.
+
+원작 라이브 데모 ([threejspunk.vercel.app](https://threejspunk.vercel.app/)) 에 접속하면 **드라이브판(Threejs-Punk Drive)** 이 나오는데, 차량 선택 → 드리프트 → 니트로 → 미션 → 차고 → 미니맵을 갖춘 완전한 레이싱 게임입니다. 겉보기엔 같은 프로젝트지만 내용은 다릅니다.
+
+**왜 두 버전이 다른가:**
+
+| 항목 | 도보판 (이 저장소) | 드라이브판 (원작 라이브) |
+|------|-------------------|------------------------|
+| 소스 | `ektogamat/threejs-conference` 의 `main` 브랜치 (공개) | 비공개 소스 — GitHub 어떤 public 브랜치(`main` / `develop` / `tour` / `game-version` 포함) 에도 없음 |
+| 플레이 | WASD 걷기 / 달리기 / 앉기, 클릭 시점 | 차량 선택, 드리프트 점수, 니트로, 미션, 차고, 미니맵, 순위 |
+| 확인 방법 | `src/world/car/` 는 정차된 전시 차량만 존재 | Vercel JS 번들에 `drift` 144건, `nitro` 109건, `garage` 111건 포함 (2026-09-30 실측) |
+
+드라이브판의 코드는 `vercel --prod` 로 로컬에서 직접 배포된 버전이거나 별도 비공개 저장소에서 나온 것으로 보이며, 원작자가 소스를 공개하기 전까지는 한글화할 방법이 없습니다. 원작자의 공개 이후 드라이브판 한글화를 진행할 예정이며, 그때까지 이 저장소는 도보판을 유지합니다.
 
 ---
 
