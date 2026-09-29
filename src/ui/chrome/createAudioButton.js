@@ -6,10 +6,11 @@ import {
   subscribe,
 } from "../../audio/audioState.js";
 
+const audioBase = import.meta.env.BASE_URL;
 const DEFAULT_URLS = [
-  "/light-rain.mp3",
-  "/night-ambience.mp3",
-  "/thunderstorm.mp3",
+  `${audioBase}light-rain.mp3`,
+  `${audioBase}night-ambience.mp3`,
+  `${audioBase}thunderstorm.mp3`,
 ];
 
 const WAVE_SVG = `

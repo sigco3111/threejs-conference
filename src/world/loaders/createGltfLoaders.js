@@ -75,10 +75,10 @@ export function getGltfLoader(renderer) {
   }
 
   dracoLoader = new DRACOLoader();
-  dracoLoader.setDecoderPath("/libs/draco/");
+  dracoLoader.setDecoderPath(`${import.meta.env.BASE_URL}libs/draco/`);
 
   ktx2Loader = new KTX2Loader();
-  ktx2Loader.setTranscoderPath("/libs/basis/");
+  ktx2Loader.setTranscoderPath(`${import.meta.env.BASE_URL}libs/basis/`);
   // Keep hardware compression (BC/ETC2/ASTC). Do NOT force RGBA32 —
   // that was the walk-mode FPS collapse from texture bandwidth.
   ktx2Loader.detectSupport(renderer);

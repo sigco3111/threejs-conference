@@ -1,10 +1,11 @@
+const base = import.meta.env.BASE_URL;
 export const BILLBOARD_VIDEO_PATHS = [
-  "/video/imagine-art-feed-item.mp4",
-  "/video/imagine-art-feed-item-2.mp4",
-  "/video/imagine-art-feed-item-3.mp4",
-  "/video/imagine-art-feed-item-4.mp4",
-  "/video/imagine-art-feed-item-5.mp4",
-  "/video/imagine-art-feed-item-6.mp4",
+  `${base}video/imagine-art-feed-item.mp4`,
+  `${base}video/imagine-art-feed-item-2.mp4`,
+  `${base}video/imagine-art-feed-item-3.mp4`,
+  `${base}video/imagine-art-feed-item-4.mp4`,
+  `${base}video/imagine-art-feed-item-5.mp4`,
+  `${base}video/imagine-art-feed-item-6.mp4`,
 ];
 
 export function createShuffledVideoPool() {

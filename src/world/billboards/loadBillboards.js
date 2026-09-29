@@ -1,7 +1,7 @@
 import { getGltfLoader } from "../loaders/createGltfLoaders.js";
 import { CITY_OFFSET_Y } from "../city/loadCity.js";
 
-const BILLBOARDS_PATH = "/models/billboards.glb";
+const BILLBOARDS_PATH = `${import.meta.env.BASE_URL}models/billboards.glb`;
 
 export async function loadBillboards(renderer) {
   const gltfLoader = getGltfLoader(renderer);

@@ -24,7 +24,7 @@ import { performanceProfile } from "../../platform/performanceProfile.js";
 
 export const RAIN_LAYER = 2;
 
-const SPLASH_TEXTURE_PATH = "/textures/water-splash.webp";
+const SPLASH_TEXTURE_PATH = `${import.meta.env.BASE_URL}textures/water-splash.webp`;
 const MAX_COUNT = 5000;
 const DEFAULT_COUNT = performanceProfile.collisionRainCount ?? 5000;
 const SPLASH_FRAMES = 5;

@@ -14,9 +14,9 @@ import { createRainRipples } from "../../tsl/rainRipples.js";
 import { performanceProfile } from "../../platform/performanceProfile.js";
 import { RAIN_LAYER } from "../weather/createCollisionRain.js";
 
-const ALBEDO_PATH = "/textures/wet-puddles-albedo.jpg";
-const ROUGHNESS_PATH = "/textures/wet-puddles-roughness.jpg";
-const NORMAL_PATH = "/textures/wet-puddles-normal.jpg";
+const ALBEDO_PATH = `${import.meta.env.BASE_URL}textures/wet-puddles-albedo.jpg`;
+const ROUGHNESS_PATH = `${import.meta.env.BASE_URL}textures/wet-puddles-roughness.jpg`;
+const NORMAL_PATH = `${import.meta.env.BASE_URL}textures/wet-puddles-normal.jpg`;
 
 const _size = new THREE.Vector2();
 const _normal = new THREE.Vector3();

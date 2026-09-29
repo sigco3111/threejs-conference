@@ -2,13 +2,14 @@ import * as THREE from "three/webgpu";
 import { getAudioVolume, getIsMusicPlaying, subscribe } from "./audioState.js";
 
 // Distinct steps cut from wet_footstep.mp3 (~0.6–0.8s each, pre-attack + echo tail).
+const footstepBase = import.meta.env.BASE_URL;
 const FOOTSTEP_URLS = [
-  "/wet_footstep-step-01.mp3",
-  "/wet_footstep-step-02.mp3",
-  "/wet_footstep-step-03.mp3",
-  "/wet_footstep-step-04.mp3",
-  "/wet_footstep-step-05.mp3",
-  "/wet_footstep-step-06.mp3",
+  `${footstepBase}wet_footstep-step-01.mp3`,
+  `${footstepBase}wet_footstep-step-02.mp3`,
+  `${footstepBase}wet_footstep-step-03.mp3`,
+  `${footstepBase}wet_footstep-step-04.mp3`,
+  `${footstepBase}wet_footstep-step-05.mp3`,
+  `${footstepBase}wet_footstep-step-06.mp3`,
 ];
 
 // Walk (~3 m/s) fires often enough; sprint (~9 m/s) uses a longer stride

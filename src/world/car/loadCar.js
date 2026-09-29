@@ -11,7 +11,7 @@ import { buildModelBvh, installBvhRaycast } from "../bvh.js";
 import { getGltfLoader } from "../loaders/createGltfLoaders.js";
 import { applyCarSurfaceRain } from "./applyCarSurfaceRain.js";
 
-const QUADRA_PATH = "/models/quadra.glb";
+const QUADRA_PATH = `${import.meta.env.BASE_URL}models/quadra.glb`;
 
 /** Alley placement near the free-camera start. */
 export const QUADRA_START = {

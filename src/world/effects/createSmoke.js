@@ -11,7 +11,7 @@ import {
 } from "three/tsl";
 import { performanceProfile } from "../../platform/performanceProfile.js";
 
-const SMOKE_TEXTURE_PATH = "/textures/smoke.png";
+const SMOKE_TEXTURE_PATH = `${import.meta.env.BASE_URL}textures/smoke.png`;
 
 /** Dedicated render layer so GTAO / beauty depth ignore transparent sprites. */
 export const SMOKE_LAYER = 3;

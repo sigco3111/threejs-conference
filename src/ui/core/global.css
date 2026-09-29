@@ -1,5 +1,7 @@
-@import url("/fonts/fonts.css");
-@import url("/fonts/phosphor/style.css");
+@font-face {
+  font-family: "Gloock";
+  /* placeholder — actual woff2 files served from /fonts/ via index.html <link> */
+}
 
 :root {
   --cyber-bg: rgba(8, 4, 18, 0.35);
